@@ -28,7 +28,8 @@
         authDomain: 'chatescola.firebaseapp.com',
         databaseURL: 'https://chatescola-default-rtdb.firebaseio.com',
         projectId: 'chatescola',
-        storageBucket: 'chatescola.firebasestorage.app',
+        // O bucket de armazenamento padrão deve usar o domínio appspot.com
+        storageBucket: 'chatescola.appspot.com',
         messagingSenderId: '360130499108',
         appId: '1:360130499108:web:b3d3b528cd136de2527eb1',
         measurementId: 'G-2BXPP3NGTD'
