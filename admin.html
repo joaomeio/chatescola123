@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel do Administrador</title>
+    <!-- Tailwind CSS for modern styling -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Firebase SDKs -->
+    <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-database-compat.js"></script>
+</head>
+<body class="bg-gray-100 font-sans">
+    <div class="max-w-3xl mx-auto mt-10 p-6 bg-white rounded-xl shadow-lg">
+        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-6">
+            <h1 class="text-3xl font-bold mb-4 sm:mb-0">Painel do Administrador</h1>
+            <nav class="space-x-4 text-blue-500">
+                <a href="index.html" class="hover:underline">Logout</a>
+                <a href="qa.html" class="hover:underline">Ver perguntas</a>
+                <a href="#" id="change-password-link" class="hover:underline">Alterar senha</a>
+            </nav>
+        </div>
+        <section class="mb-8">
+            <h2 class="text-2xl font-semibold mb-4">Adicionar nova pergunta</h2>
+            <form id="qa-form" class="space-y-4">
+                <input type="text" id="question" placeholder="Pergunta" class="w-full p-3 border rounded focus:outline-none focus:ring-2 focus:ring-blue-400" required>
+                <textarea id="answer" rows="4" placeholder="Resposta" class="w-full p-3 border rounded focus:outline-none focus:ring-2 focus:ring-blue-400" required></textarea>
+                <button type="submit" class="py-3 px-6 bg-blue-500 text-white rounded hover:bg-blue-600 transition-colors">Adicionar</button>
+            </form>
+        </section>
+        <section>
+            <h2 class="text-2xl font-semibold mb-4">Perguntas e Respostas Cadastradas</h2>
+            <div id="qa-list" class="space-y-4"></div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

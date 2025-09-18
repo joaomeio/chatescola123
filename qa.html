@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perguntas e Respostas</title>
+    <!-- Tailwind CSS for modern styling -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Firebase SDK (for realtime updates) -->
+    <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-database-compat.js"></script>
+</head>
+<body class="bg-gray-100 font-sans">
+    <div class="max-w-3xl mx-auto mt-10 p-6 bg-white rounded-xl shadow-lg">
+        <div class="flex justify-between items-center mb-6">
+            <h1 class="text-3xl font-bold">Perguntas e Respostas</h1>
+            <nav class="text-blue-500">
+                <a href="index.html" class="hover:underline">Home</a>
+            </nav>
+        </div>
+        <div id="qa-list" class="space-y-6"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

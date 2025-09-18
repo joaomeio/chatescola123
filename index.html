@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Perguntas – Login</title>
+    <!-- Tailwind CSS for modern styling -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Optionally keep custom styles (not used after redesign) -->
+</head>
+<body class="bg-gray-100 font-sans">
+    <div class="max-w-md mx-auto mt-16 p-6 bg-white rounded-xl shadow-lg">
+        <h1 class="text-3xl font-bold text-center mb-4">Sistema de Perguntas</h1>
+        <p class="text-gray-600 text-center mb-6">Faça login como administrador ou entre como visitante para visualizar as respostas.</p>
+        <form id="login-form" class="space-y-4">
+            <input type="password" id="password" placeholder="Senha do administrador" class="w-full p-3 border rounded focus:outline-none focus:ring-2 focus:ring-blue-400" required>
+            <button type="submit" class="w-full py-3 bg-blue-500 text-white rounded hover:bg-blue-600 transition-colors">Entrar como administrador</button>
+        </form>
+        <button id="guest-btn" class="w-full py-3 mt-4 bg-green-500 text-white rounded hover:bg-green-600 transition-colors">Entrar como visitante</button>
+        <p id="login-error" class="text-red-600 mt-4 hidden">Senha incorreta. Tente novamente.</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
